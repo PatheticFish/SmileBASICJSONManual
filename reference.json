@@ -1420,11 +1420,11 @@
 		"parameters":"BQPARAM Filter array, Filter type, Sampling rate, Cutoff frequency, Q value(Bandwidth) [,Amplification] "
 	},
 	"FFT":{
-		"description":"Preforms Fourier transform on complex number arrays",
+		"description":"Performs Fourier transform on complex number arrays",
 		"parameters":"FFT Real output array, Imaginary output array, Real input array, Imaginary input array [,Window array]"
 	},
 	"IFFT":{
-		"description":"Preforms Inverse Fourier transform on complex number arrays",
+		"description":"Performs Inverse Fourier transform on complex number arrays",
 		"parameters":"FFT Real output array, Imaginary output array, Real input array, Imaginary input array"
 	},
 	"FFTWFN":{
@@ -1436,7 +1436,7 @@
 		"parameters":"PCMSTREAM Pcm array [,Sampling rate]"
 	},
 	"PCMSTREAM (2)":{
-		"description":"Preforms PCM playback using arrays from the left and right\n\t\t- The length of the array specified first will be looped on playback",
+		"description":"Performs PCM playback using arrays from the left and right\n\t\t- The length of the array specified first will be looped on playback",
 		"parameters":"PCMSTREAM Left array, Right array [,Sampling rate]"
 	},
 	"PCMSTREAM (3)":{
