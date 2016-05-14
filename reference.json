@@ -1362,5 +1362,113 @@
 	"&gt;&gt;":{
 		"description":"Shifts a numerical value to the right by the specified number of bits",
 		"parameters":"Variable=Numerical value &gt;&gt; Number of times"
+	},
+	"BGMPAUSE (1)":{
+		"description":"Pauses music play (BGMCONT should be used to resume play)",
+		"parameters":"BGMPAUSE [Track number [,Fading time]]"
+	},
+	"BGMPAUSE (2)":{
+		"description":"Checks that music play is paused",
+		"parameters":"BGMPAUSE([Track number])"
+	},
+	"BGMCONT":{
+		"description":"Resumes music play that has been paused (BGMPAUSE should be used to pause play)",
+		"parameters":"BGMCONT [Track number [,Fading time]]"
+	},
+	"SNDSTOP":{
+		"description":"Stops all sound generation",
+		"parameters":"SNDSTOP"
+	},
+	"MILLISEC":{
+		"description":"Millisecond value since SmileBASIC was launched",
+		"parameters":"MILLISEC"
+	},
+	"CLIPBOARD (1)":{
+		"description":"Sets the content of the clipboard",
+		"parameters":"CLIPBOARD Character string"
+	},
+	"CLIPBOARD (2)":{
+		"description":"Gets the content of the clipboard",
+		"parameters":"CLIPBOARD()"
+	},
+	"GOFS (1)":{
+		"description":"Changes (moves) the coordinates of the graphic screen",
+		"parameters":"GOFS X,Y"
+	},
+	"GOFS (2)":{
+		"description":"Fetches the offset value of the graphic screen",
+		"parameters":"GOFS OUT X,Y"
+	},
+	"BIN$":{
+		"description":"Gets a Binary string from a numerical value",
+		"parameters":"String variable = BIN$( Numerical value [,Number of digits] )"
+	},
+	"DLCOPEN":{
+		"description":"Instruction that declares usage of additional content. As additional content for which usage must be declared using DLCOPEN is not available for purchase outside of Japan, this instruction will always give an error",
+		"parameters":"DLCOPEN \"IP name\" [,\"IP name 2\" ,... ]\nDLCOPEN \"IP Name\" [,\"IP Name 2\" ,... ]"
+	},
+	"EXTFEATURE":{
+		"description":"Support for additional instructions\n\t\t0 = Default, 1 = Advanced sound instruction pack is present",
+		"parameters":"EXTFEATURE"
+	},
+	"BIQUAD":{
+		"description":"BiQuad filter",
+		"parameters":"BIQUAD Output array, Input array, Filter array"
+	},
+	"BQPARAM":{
+		"description":"Calculates the filter coefficients of a BiQuad filter",
+		"parameters":"BQPARAM Filter array, Filter type, Sampling rate, Cutoff frequency, Q value(Bandwidth) [,Amplification] "
+	},
+	"FFT":{
+		"description":"Preforms Fourier transform on complex number arrays",
+		"parameters":"FFT Real output array, Imaginary output array, Real input array, Imaginary input array [,Window array]"
+	},
+	"IFFT":{
+		"description":"Preforms Inverse Fourier transform on complex number arrays",
+		"parameters":"FFT Real output array, Imaginary output array, Real input array, Imaginary input array"
+	},
+	"FFTWFN":{
+		"description":"Returns values of the specified window function to an array",
+		"parameters":"FFTWFN Output array, Window type"
+	},
+	"PCMSTREAM (1)":{
+		"description":"Assigns the specified array to the left and right channels to preform PCM playback\n\t\t- The length of the array specified first will be looped on playback",
+		"parameters":"PCMSTREAM Pcm array [,Sampling rate]"
+	},
+	"PCMSTREAM (2)":{
+		"description":"Preforms PCM playback using arrays from the left and right\n\t\t- The length of the array specified first will be looped on playback",
+		"parameters":"PCMSTREAM Left array, Right array [,Sampling rate]"
+	},
+	"PCMSTREAM (3)":{
+		"description":"Changes the sampling rate of the PCMSTREAM currently being played back (if not being played back, no change)",
+		"parameters":"PCMSTREAM Sampling rate"
+	},
+	"PCMPOS":{
+		"description":"System variable that indicates the top position (array index) of transfer to the internal PCMSTREAM FIFO stack (when stack becomes empty, transfer will start from this position)",
+		"parameters":"PCMPOS"
+	},
+	"PCMVOL":{
+		"description":"Sets the volume of PCMSTREAM",
+		"parameters":"PCMVOL [Channel,] Volume"
+	},
+	"PCMSTOP":{
+		"description":"Stops PCMSTREAM",
+		"parameters":"PCMSTOP"
+	},
+	"PCMCONT":{
+		"description":"Resumes playback from the state when PCMSTREAM was stopped",
+		"parameters":"PCMCONT"
+	},
+	"ARYOP":{
+		"description":"Performs arithmetic operations on elements between arrays collectively\n\t\tetc.",
+		"parameters":"ARYOP Operation type, Result storage array variable, Parameter 1, Parameter 2 [,Parameter 3]"
+	},
+	"RINGCOPY":{
+		"description":"Instruction that copies data using the copy destination array variable as a ring buffer\n\t\t RINGCOPY copies values between arrays just like the copy instruction. However, when the copy source has more elements than the copy destination, RINGCOPY will not increase the number of elements, but return to the top and copy the remaining elements.",
+		"parameters":"RINGCOPY Copy destination array, Copy destination offset,Copy source array [[,Copy source offset],Number of copy elements]"
+	},
+	"RINGCOPY":{
+		"description":"Instruction that copies data using the copy destination array variable as a ring buffer\n\t\tIf used in a function type command, RINGCOPY returns the end position of the data copied as a ring buffer.",
+		"parameters":"Variable = RINGCOPY(Copy destination array, Copy destination offset,Copy source array [[,Copy source offset],Number of copy elements])"
 	}
 }
