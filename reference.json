@@ -1,74 +1,74 @@
 {
 	"CLEAR":{
-		"description":"Initializes the BASIC internal memoryDIRECT mode only",
+		"description":"Initializes the BASIC internal memory\n\t\tDIRECT mode only",
 		"parameters":"CLEAR"
 	},
 	"NEW":{
-		"description":"Erases programsDIRECT mode only",
+		"description":"Erases programs\n\t\tDIRECT mode only",
 		"parameters":"NEW [Program SLOT]"
 	},
 	"LIST":{
-		"description":"Switches to EDIT mode and starts editing- DIRECT mode only\n\t\t- Using LIST with no argument is equal to pressing the EDIT button",
+		"description":"Switches to EDIT mode and starts editing\n\t\t- DIRECT mode only\n\t\t- Using LIST with no argument is equal to pressing the EDIT button",
 		"parameters":"LIST [ Line number/ERR ]"
 	},
 	"RUN":{
-		"description":"Program executionDIRECT mode only",
+		"description":"Program execution\n\t\tDIRECT mode only",
 		"parameters":"RUN [Program SLOT]"
 	},
 	"CONT":{
-		"description":"Resumes a suspended program- DIRECT mode only\n\t\t- Execution is resumed from the location it was suspended at using the START button, the STOP instruction, or due to an error\n\t\t- If the program has been stopped and then edited, it cannot be resumed\n\t\t- If the program was suspended while waiting for user input, it cannot be resumed\n\t\t- The program may not be able to be resumed depending on the type of error that occurred",
+		"description":"Resumes a suspended program\n\t\t- DIRECT mode only\n\t\t- Execution is resumed from the location it was suspended at using the START button, the STOP instruction, or due to an error\n\t\t- If the program has been stopped and then edited, it cannot be resumed\n\t\t- If the program was suspended while waiting for user input, it cannot be resumed\n\t\t- The program may not be able to be resumed depending on the type of error that occurred",
 		"parameters":"CONT"
 	},
 	"PROJECT (1)":{
-		"description":"Switches the default projectDIRECT mode only",
+		"description":"Switches the default project\n\t\tDIRECT mode only",
 		"parameters":"PROJECT \"Project name\" "
 	},
 	"PROJECT (2)":{
-		"description":"Obtains the default projectCan be also used from within programs",
+		"description":"Obtains the default project\n\t\tCan be also used from within programs",
 		"parameters":"PROJECT OUT PJ$ "
 	},
 	"BACKTRACE":{
-		"description":"Displays the history of previous callers- DIRECT mode only\n\t\t- When execution has been stopped, for example with the STOP instruction, the caller history up to the point just before it was stopped will be displayed\n\t\t- A list of slot numbers and line numbers will be displayed",
+		"description":"Displays the history of previous callers\n\t\t- DIRECT mode only\n\t\t- When execution has been stopped, for example with the STOP instruction, the caller history up to the point just before it was stopped will be displayed\n\t\t- A list of slot numbers and line numbers will be displayed",
 		"parameters":"BACKTRACE"
 	},
 	"=":{
-		"description":"Assigns a value or expression to a variable- A simplified notation of the LET instruction used in conventional BASIC\n\t\t- In this software, the LET instruction itself is omitted; only '=' should be used for assignment",
+		"description":"Assigns a value or expression to a variable\n\t\t- A simplified notation of the LET instruction used in conventional BASIC\n\t\t- In this software, the LET instruction itself is omitted; only '=' should be used for assignment",
 		"parameters":"="
 	},
 	"DIM (1)":{
-		"description":"Declares arrays to use- In this product, arrays must always be declared\n\t\t- The subscript should begin with 0\n\t\t- The number of elements must be enclosed in []. () is not allowed\n\t\t- Either DIM or VAR can be used",
+		"description":"Declares arrays to use\n\t\t- In this product, arrays must always be declared\n\t\t- The subscript should begin with 0\n\t\t- The number of elements must be enclosed in []. () is not allowed\n\t\t- Either DIM or VAR can be used",
 		"parameters":"DIM Array variable name[ Number of elements ] ,…"
 	},
 	"DIM (2)":{
-		"description":"Declares variables to use- When OPTION STRICT is specified, each variable that will be used must be declared\n\t\t- Usage where DIM is used for variable definition",
+		"description":"Declares variables to use\n\t\t- When OPTION STRICT is specified, each variable that will be used must be declared\n\t\t- Usage where DIM is used for variable definition",
 		"parameters":"DIM Variable name ,…"
 	},
 	"VAR (1)":{
-		"description":"Declares variables to useWhen OPTION STRICT is specified, each variable that will be used must be declared",
+		"description":"Declares variables to use\n\t\tWhen OPTION STRICT is specified, each variable that will be used must be declared",
 		"parameters":"VAR Variable name ,…"
 	},
 	"VAR (2)":{
-		"description":"Declares arrays to use- In this product, arrays must always be declared\n\t\t- The subscript should begin with 0\n\t\t- The number of elements must be enclosed in []. () is not allowed\n\t\t- Either DIM or VAR can be used",
+		"description":"Declares arrays to use\n\t\t- In this product, arrays must always be declared\n\t\t- The subscript should begin with 0\n\t\t- The number of elements must be enclosed in []. () is not allowed\n\t\t- Either DIM or VAR can be used",
 		"parameters":"VAR Array variable name[ Number of elements ] ,…"
 	},
 	"SWAP":{
-		"description":"Swaps the values of two variablesReplacing a character string with a numerical value, or vice versa, is not allowed",
+		"description":"Swaps the values of two variables\n\t\tReplacing a character string with a numerical value, or vice versa, is not allowed",
 		"parameters":"SWAP Variable 1, Variable 2"
 	},
 	"INC":{
-		"description":"Increments the value of a variable by +1If the Expression argument is specified, the value of the expression will be added",
+		"description":"Increments the value of a variable by +1\n\t\tIf the Expression argument is specified, the value of the expression will be added",
 		"parameters":"INC Variable [, Expression ]"
 	},
 	"DEC":{
-		"description":"Decrements the value of a variable by -1If the Expression argument is specified, the value of the expression will be subtracted",
+		"description":"Decrements the value of a variable by -1\n\t\tIf the Expression argument is specified, the value of the expression will be subtracted",
 		"parameters":"DEC Variable [, Expression ]"
 	},
 	"COPY (1)":{
-		"description":"Copies one array to another array- For one-dimensional arrays only, if the number of elements in the copy destination is insufficient, the required element(s) will be added automatically\n\t\t- Both the copy source and destination ignore dimensions",
+		"description":"Copies one array to another array\n\t\t- For one-dimensional arrays only, if the number of elements in the copy destination is insufficient, the required element(s) will be added automatically\n\t\t- Both the copy source and destination ignore dimensions",
 		"parameters":"COPY Copy destination array [,Copy destination offset],Copy source array [[,Copy source offset] , Number of copy elements]"
 	},
 	"COPY (2)":{
-		"description":"Reads a DATA sequence into an array- The data elements enumerated in the DATA instruction will be read into the array\n\t\t- For one-dimensional arrays only, if the number of elements in the copy destination is insufficient, the required element(s) will be added automatically",
+		"description":"Reads a DATA sequence into an array\n\t\t- The data elements enumerated in the DATA instruction will be read into the array\n\t\t- For one-dimensional arrays only, if the number of elements in the copy destination is insufficient, the required element(s) will be added automatically",
 		"parameters":"COPY Copy destination array [,Copy destination offset], \"@Label string\" [,Number of copy data items] "
 	},
 	"SORT":{
@@ -96,11 +96,11 @@
 		"parameters":"Variable=SHIFT( Array )"
 	},
 	"FILL":{
-		"description":"Sets all the elements in an array to the specified value- Partial changes can also be made by specifying an offset and number of elements\n\t\t- You can specify any type of array, including integer, real number, or string",
+		"description":"Sets all the elements in an array to the specified value\n\t\t- Partial changes can also be made by specifying an offset and number of elements\n\t\t- You can specify any type of array, including integer, real number, or string",
 		"parameters":"FILL Array, Value [,Offset [,Number of elements]]"
 	},
 	"@":{
-		"description":"Name to indicate a program or data position- It is not possible to specify the line number directly with GOTO or other instructions\n\t\t- Branch destinations and data positions must be all specified using labels",
+		"description":"Name to indicate a program or data position\n\t\t- It is not possible to specify the line number directly with GOTO or other instructions\n\t\t- Branch destinations and data positions must be all specified using labels",
 		"parameters":"@Label name"
 	},
 	"GOTO (1)":{
@@ -116,27 +116,27 @@
 		"parameters":"RETURN "
 	},
 	"RETURN (2)":{
-		"description":"Returns a value from a sub-routine while returning to the callerUsed to return values in a DEF instruction defined as function type",
+		"description":"Returns a value from a sub-routine while returning to the caller\n\t\tUsed to return values in a DEF instruction defined as function type",
 		"parameters":"RETURN "
 	},
 	"OUT":{
-		"description":"Instruction used when multiple outputs are required- Used to declare a DEF instruction that returns multiple values\n\t\t- Also used in built-in instructions that return multiple values",
+		"description":"Instruction used when multiple outputs are required\n\t\t- Used to declare a DEF instruction that returns multiple values\n\t\t- Also used in built-in instructions that return multiple values",
 		"parameters":"OUT"
 	},
 	"ON (1)":{
-		"description":"Branches to a label line according to the control variable value- The branch number begins with 0, unlike in conventional BASIC",
+		"description":"Branches to a label line according to the control variable value\n\t\t- The branch number begins with 0, unlike in conventional BASIC",
 		"parameters":"ON Control variable GOTO @Label 0, @Label 1…"
 	},
 	"GOTO (2)":{
-		"description":"Branches to a label line according to the control variable value- The branch number begins with 0, unlike in conventional BASIC",
+		"description":"Branches to a label line according to the control variable value\n\t\t- The branch number begins with 0, unlike in conventional BASIC",
 		"parameters":"ON Control variable GOTO @Label 0, @Label 1…"
 	},
 	"ON (2)":{
-		"description":"Calls a sub-routine according to a control variable value- The branch number begins with 0, unlike in conventional BASIC",
+		"description":"Calls a sub-routine according to a control variable value\n\t\t- The branch number begins with 0, unlike in conventional BASIC",
 		"parameters":"ON Control variable GOSUB @Label 0, @Label 1…"
 	},
 	"GOSUB (2)":{
-		"description":"Calls a sub-routine according to the control variable value- The branch number begins with 0, unlike in conventional BASIC",
+		"description":"Calls a sub-routine according to the control variable value\n\t\t- The branch number begins with 0, unlike in conventional BASIC",
 		"parameters":"ON Control variable GOSUB @Label 0, @Label 1…"
 	},
 	"IF (1)":{
@@ -144,47 +144,47 @@
 		"parameters":"IF Conditional expression THEN Process to execute when the condition is satisfied [ELSE Process to execute when the condition is not satisfied] [ENDIF]"
 	},
 	"THEN":{
-		"description":"Control destination if the IF condition is satisfiedSee Comment for IF for details regarding conditional evaluation",
+		"description":"Control destination if the IF condition is satisfied\n\t\tSee Comment for IF for details regarding conditional evaluation",
 		"parameters":"IF Conditional expression THEN Process to execute when the condition is satisfied [ELSE Process to execute when the condition is not satisfied] [ENDIF]"
 	},
 	"ELSE":{
-		"description":"Control destination if the IF condition is not satisfiedSee Comment for IF for details regarding conditional evaluation",
+		"description":"Control destination if the IF condition is not satisfied\n\t\tSee Comment for IF for details regarding conditional evaluation",
 		"parameters":"IF Conditional expression THEN Process to execute when the condition is satisfied ELSE Process to execute when the condition is not satisfied [ENDIF]"
 	},
 	"ELSEIF":{
-		"description":"Additional conditional evaluation if the IF condition is not satisfied- Used to evaluate another condition if the IF condition is not satisfied\n\t\t- See Comment for IF for details regarding conditional evaluation",
+		"description":"Additional conditional evaluation if the IF condition is not satisfied\n\t\t- Used to evaluate another condition if the IF condition is not satisfied\n\t\t- See Comment for IF for details regarding conditional evaluation",
 		"parameters":"IF Conditional expression THEN Process to execute when the condition is satisfied ELSEIF Conditional expression THEN Process to execute when the condition is satisfied ENDIF"
 	},
 	"ENDIF":{
-		"description":"Ends if processing spans multiple lines after control switching with IFSee Comment for IF for details regarding conditional evaluation",
+		"description":"Ends if processing spans multiple lines after control switching with IF\n\t\tSee Comment for IF for details regarding conditional evaluation",
 		"parameters":"IF Conditional expression THEN Process to execute when the condition is satisfied ELSE Process to execute when the condition is not satisfied [ENDIF]"
 	},
 	"IF (2)":{
-		"description":"Branches to @Label if the condition is satisfiedSee Comment for IF for details regarding conditional evaluation",
+		"description":"Branches to @Label if the condition is satisfied\n\t\tSee Comment for IF for details regarding conditional evaluation",
 		"parameters":"IF Conditional expression GOTO @Label [ELSE Process to execute when the condition is not satisfied]"
 	},
 	"GOTO (3)":{
-		"description":"Branches to @Label if the condition is satisfied- See Comment for IF for details regarding conditional evaluation",
+		"description":"Branches to @Label if the condition is satisfied\n\t\t- See Comment for IF for details regarding conditional evaluation",
 		"parameters":"IF Conditional expression GOTO @Label [ELSE Process to execute when the condition is not satisfied]"
 	},
 	"FOR":{
-		"description":"Repeats the process for the specified number of times- The NEXT instruction should be placed at the end of the process\n\t\t- If the condition is not satisfied, the process may not be executed at all",
+		"description":"Repeats the process for the specified number of times\n\t\t- The NEXT instruction should be placed at the end of the process\n\t\t- If the condition is not satisfied, the process may not be executed at all",
 		"parameters":"FOR Loop variable=Initial value TO End value [STEP Increment]"
 	},
 	"TO":{
-		"description":"Specifies the loop count end value- See Comment for the FOR instruction for details regarding FOR to NEXT",
+		"description":"Specifies the loop count end value\n\t\t- See Comment for the FOR instruction for details regarding FOR to NEXT",
 		"parameters":"TO End value"
 	},
 	"STEP":{
-		"description":"Specifies the increment value for a FOR loop count- See Comment for the FOR instruction for details regarding FOR to NEXT",
+		"description":"Specifies the increment value for a FOR loop count\n\t\t- See Comment for the FOR instruction for details regarding FOR to NEXT",
 		"parameters":"STEP Increment"
 	},
 	"NEXT":{
-		"description":"Instruction that indicates the end of a FOR loop- See Comment for the FOR instruction for details regarding FOR to NEXT\n\t\t- Using NEXT with IF in a FOR loop is not recommended\n\t\t- Use CONTINUE to exit the loop before the end",
+		"description":"Instruction that indicates the end of a FOR loop\n\t\t- See Comment for the FOR instruction for details regarding FOR to NEXT\n\t\t- Using NEXT with IF in a FOR loop is not recommended\n\t\t- Use CONTINUE to exit the loop before the end",
 		"parameters":"NEXT [ Control variable ]"
 	},
 	"WHILE":{
-		"description":"Repeats the process up to WEND while the condition is satisfied- Exits the loop if the condition is not satisfied or when the BREAK instruction is executed",
+		"description":"Repeats the process up to WEND while the condition is satisfied\n\t\t- Exits the loop if the condition is not satisfied or when the BREAK instruction is executed",
 		"parameters":"WHILE Conditional expression"
 	},
 	"WEND":{
@@ -192,19 +192,19 @@
 		"parameters":"WEND"
 	},
 	"REPEAT":{
-		"description":"Instruction for starting a REPEAT loop- The UNTIL instruction and a conditional expression should be placed at the end of the loop\n\t\t- Unlike the WHILE instruction, this executes the process before determining the condition\n\t\t- Exits the loop when the condition is satisfied or when the BREAK instruction is executed",
+		"description":"Instruction for starting a REPEAT loop\n\t\t- The UNTIL instruction and a conditional expression should be placed at the end of the loop\n\t\t- Unlike the WHILE instruction, this executes the process before determining the condition\n\t\t- Exits the loop when the condition is satisfied or when the BREAK instruction is executed",
 		"parameters":"REPEAT"
 	},
 	"UNTIL":{
-		"description":"Repeats the process from REPEAT until the conditional expression is satisfied- The REPEAT instruction should be placed at the beginning of the loop\n\t\t- Unlike the WHILE instruction, this executes the process before determining the condition\n\t\t- Exits the loop if the condition is satisfied or when the BREAK instruction is executed",
+		"description":"Repeats the process from REPEAT until the conditional expression is satisfied\n\t\t- The REPEAT instruction should be placed at the beginning of the loop\n\t\t- Unlike the WHILE instruction, this executes the process before determining the condition\n\t\t- Exits the loop if the condition is satisfied or when the BREAK instruction is executed",
 		"parameters":"UNTIL conditional expression"
 	},
 	"CONTINUE":{
-		"description":"Forces a loop to proceed- Used in FOR ... NEXT, WHILE ... WEND, REPEAT ... UNTIL",
+		"description":"Forces a loop to proceed\n\t\t- Used in FOR ... NEXT, WHILE ... WEND, REPEAT ... UNTIL",
 		"parameters":"CONTINUE"
 	},
 	"BREAK":{
-		"description":"Forces a loop to end- Used in FOR ... NEXT, WHILE ... WEND, REPEAT ... UNTIL",
+		"description":"Forces a loop to end\n\t\t- Used in FOR ... NEXT, WHILE ... WEND, REPEAT ... UNTIL",
 		"parameters":"BREAK"
 	},
 	"END (1)":{
@@ -216,7 +216,7 @@
 		"parameters":"END "
 	},
 	"STOP":{
-		"description":"Suspends a running program- The program SLOT:line number of the suspended program will be displayed\n\t\t- The program can be resumed with the CONT instruction (However, resuming is not available in certain situations)",
+		"description":"Suspends a running program\n\t\t- The program SLOT:line number of the suspended program will be displayed\n\t\t- The program can be resumed with the CONT instruction (However, resuming is not available in certain situations)",
 		"parameters":"STOP"
 	},
 	"DEF (1)":{
@@ -260,7 +260,7 @@
 		"parameters":"READ Acquisition variable 1 [, Acquisition variable 2…]"
 	},
 	"DATA":{
-		"description":"Defines data to read with READ- Numerical values and character strings can be mixed\n\t\t- Expressions containing only numerical constants are handled as constants, and so can be written in DATA statements\n\t\t- Constants starting with # are also allowed\n\t\t- Expressions where &amp;&amp;, ||, variables, and functions are mixed are not allowed\n\t\t- Character string expressions are not allowed",
+		"description":"Defines data to read with READ\n\t\t-Numerical values and character strings can be mixed\n\t\t- Expressions containing only numerical constants are handled as constants, and so can be written in DATA statements\n\t\t- Constants starting with # are also allowed\n\t\t- Expressions where &amp;&amp;, ||, variables, and functions are mixed are not allowed\n\t\t- Character string expressions are not allowed",
 		"parameters":"DATA Data [, Data…]"
 	},
 	"RESTORE":{
@@ -280,11 +280,11 @@
 		"parameters":"VSYNC [Number of frames]"
 	},
 	"'":{
-		"description":"Symbols for writing comments- Comments do not affect program execution",
+		"description":"Symbols for writing comments\n\t\t- Comments do not affect program execution",
 		"parameters":"' [String]"
 	},
 	"REM":{
-		"description":"Instructions for writing comments- Comments do not affect program execution",
+		"description":"Instructions for writing comments\n\t\t- Comments do not affect program execution",
 		"parameters":"REM [Character string]"
 	},
 	"KEY":{
@@ -312,7 +312,7 @@
 		"parameters":"Variable = CHKVAR(\"Character string\")"
 	},
 	"DIALOG (1)":{
-		"description":"Displays a dialog and waits for a button to be pressed- The result is returned with the system variable RESULT\n\t\t- RESULT: 1 (Confirmed), -1 (Canceled), 0 (Time out)",
+		"description":"Displays a dialog and waits for a button to be pressed\n\t\t- The result is returned with the system variable RESULT\n\t\t- RESULT: 1 (Confirmed), -1 (Canceled), 0 (Time out)",
 		"parameters":"DIALOG \"Text string\" "
 	},
 	"DIALOG (2)":{
@@ -332,11 +332,11 @@
 		"parameters":"String=DIALOG( \"Initial string\", \"Caption string\" [,Maximum characters]) "
 	},
 	"DIALOG (6)":{
-		"description":"Displaying special characters in DIALOGTo use special character and symbols, pass the character code in the UTF-16 format to CHR$\n\t\t* For details on the UTF-16 format, please refer to a technical book or similar resource.",
+		"description":"Displaying special characters in DIALOG\n\t\tTo use special character and symbols, pass the character code in the UTF-16 format to CHR$\n\t\t* For details on the UTF-16 format, please refer to a technical book or similar resource.",
 		"parameters":"CLS"
 	},
 	"COLOR":{
-		"description":"Specifies the display colors for the console screenConstants for text colors are available (#TBLACK to #TWHITE)",
+		"description":"Specifies the display colors for the console screen\n\t\tConstants for text colors are available (#TBLACK to #TWHITE)",
 		"parameters":"COLOR Drawing color [,Background color]"
 	},
 	"LOCATE":{
@@ -344,15 +344,15 @@
 		"parameters":"LOCATE [X-coordinate],[Y-coordinate] [,Z-coordinate]"
 	},
 	"PRINT":{
-		"description":"Displays characters on the console screen- Omitting expressions causes only a line break to occur\n\t\t- ? can be used instead of PRINT",
+		"description":"Displays characters on the console screen\n\t\t- Omitting expressions causes only a line break to occur\n\t\t- ? can be used instead of PRINT",
 		"parameters":"PRINT [Expression [; or, Expression…]]"
 	},
 	"ATTR":{
-		"description":"Sets the rotation/inversion attributes of the characters to display on the console screenConstants for text attributes are available (#TROT0-270, #TREVH,V)",
+		"description":"Sets the rotation/inversion attributes of the characters to display on the console screen\n\t\tConstants for text attributes are available (#TROT0-270, #TREVH,V)",
 		"parameters":"ATTR Display attribute"
 	},
 	"SCROLL":{
-		"description":"Adjusts the display location of the whole console screen- Can give the impression of a moving view point (characters will move in the opposite direction)\n\t\t- Characters pushed out of the screen will disappear",
+		"description":"Adjusts the display location of the whole console screen\n\t\t- Can give the impression of a moving view point (characters will move in the opposite direction)\n\t\t- Characters pushed out of the screen will disappear",
 		"parameters":"SCROLL Number of characters X, Number of characters Y"
 	},
 	"CHKCHR":{
@@ -360,11 +360,11 @@
 		"parameters":"Variable = CHKCHR( X-coordinate,Y-coordinate )"
 	},
 	"INPUT":{
-		"description":"Inputs numerical values or character strings from the keyboard- Waits for input until the ENTER key is input\n\t\t- If the number of input items is insufficient, \"?Redo from start\" will be displayed for re-input",
+		"description":"Inputs numerical values or character strings from the keyboard\n\t\t- Waits for input until the ENTER key is input\n\t\t- If the number of input items is insufficient, \"?Redo from start\" will be displayed for re-input",
 		"parameters":"INPUT [\"Guiding text string\";] Variable[,Variable 2…]"
 	},
 	"LINPUT":{
-		"description":"Gets a character string input from the keyboard- Also accepts \",\" and other characters that the INPUT instruction does not allow\n\t\t- Waits for input until the ENTER key is input",
+		"description":"Gets a character string input from the keyboard\n\t\t- Also accepts \",\" and other characters that the INPUT instruction does not allow\n\t\t- Waits for input until the ENTER key is input",
 		"parameters":"LINPUT [\"Guiding text string\";] String variable"
 	},
 	"INKEY$":{
@@ -384,15 +384,15 @@
 		"parameters":"FONTDEF "
 	},
 	"WIDTH":{
-		"description":"Changes the console character sizes- Only enlarges the characters, does not display a smooth zoomed-in view\n\t\t- This is an auxiliary function for people who have trouble viewing small characters",
+		"description":"Changes the console character sizes\n\t\t- Only enlarges the characters, does not display a smooth zoomed-in view\n\t\t- This is an auxiliary function for people who have trouble viewing small characters",
 		"parameters":"WIDTH Font size"
 	},
 	"BUTTON":{
-		"description":"Gets the status of hardware buttonsConstants for buttons are available for return values",
+		"description":"Gets the status of hardware buttons\n\t\tConstants for buttons are available for return values",
 		"parameters":"Variable=BUTTON( [Feature ID [,Terminal ID]] )"
 	},
 	"BREPEAT":{
-		"description":"Sets the key repeat feature- Omitting Start time and Interval will turn off repeat\n\t\t- Management numbers differ from the bit values that correspond to each button in BUTTON\n\t\t- ZR and ZL buttons are available only when Circle Pad Pro is used",
+		"description":"Sets the key repeat feature\n\t\t- Omitting Start time and Interval will turn off repeat\n\t\t- Management numbers differ from the bit values that correspond to each button in BUTTON\n\t\t- ZR and ZL buttons are available only when Circle Pad Pro is used",
 		"parameters":"BREPEAT Button ID, Start time, Interval"
 	},
 	"STICK":{
@@ -400,31 +400,31 @@
 		"parameters":"STICK [Terminal ID] OUT X,Y"
 	},
 	"STICKEX":{
-		"description":"Gets information on the Circle Pad Pro stickCircle Pad Pro should be enabled beforehand with XON EXPAD",
+		"description":"Gets information on the Circle Pad Pro stick\n\t\tCircle Pad Pro should be enabled beforehand with XON EXPAD",
 		"parameters":"STICKEX [Terminal ID] OUT X,Y"
 	},
 	"ACCEL":{
-		"description":"Gets information on acceleration- The motion sensor should be enabled beforehand with XON MOTION\n\t\t- Note that this instruction will continue to detect 1G acceleration in the gravity direction\n\t\t- This is useful when operation is performed while tilting",
+		"description":"Gets information on acceleration\n\t\t- The motion sensor should be enabled beforehand with XON MOTION\n\t\t- Note that this instruction will continue to detect 1G acceleration in the gravity direction\n\t\t- This is useful when operation is performed while tilting",
 		"parameters":"ACCEL OUT X,Y,Z"
 	},
 	"GYROV":{
-		"description":"Gets information on the angular velocity of the gyro sensorMotion sensor(s) should be enabled beforehand with XON MOTION",
+		"description":"Gets information on the angular velocity of the gyro sensor\n\t\tMotion sensor(s) should be enabled beforehand with XON MOTION",
 		"parameters":"GYROV OUT P,R,Y"
 	},
 	"GYROA":{
-		"description":"Gets information on the angle of the gyro sensorMotion sensor(s) should be enabled beforehand with XON MOTION",
+		"description":"Gets information on the angle of the gyro sensor\n\t\tMotion sensor(s) should be enabled beforehand with XON MOTION",
 		"parameters":"GYROA OUT P,R,Y"
 	},
 	"GYROSYNC":{
-		"description":"Updates gyro information- Error accumulation may occur if gyro information is repeatedly retrieved\n\t\t- This instruction should be called to reset information appropriately\n\t\t- However, calling this instruction at an interval of 1 frame or less is prohibited",
+		"description":"Updates gyro information\n\t\t- Error accumulation may occur if gyro information is repeatedly retrieved\n\t\t- This instruction should be called to reset information appropriately\n\t\t- However, calling this instruction at an interval of 1 frame or less is prohibited",
 		"parameters":"GYROSYNC"
 	},
 	"TOUCH":{
-		"description":"Gets touch informationThe 5 pixels around the edge of the screen cannot be read",
+		"description":"Gets touch information\n\t\tThe 5 pixels around the edge of the screen cannot be read",
 		"parameters":"TOUCH [Terminal ID] OUT STTM,TX,TY"
 	},
 	"MICSTART":{
-		"description":"Starts sampling from the microphone- The microphone should be enabled beforehand with XON MIC\n\t\t- Recorded into memory used for sampling in the system",
+		"description":"Starts sampling from the microphone\n\t\t- The microphone should be enabled beforehand with XON MIC\n\t\t- Recorded into memory used for sampling in the system",
 		"parameters":"MICSTART Sampling rate, Number of bits, Number of seconds"
 	},
 	"MICSTOP":{
@@ -432,7 +432,7 @@
 		"parameters":"MICSTOP"
 	},
 	"MICDATA":{
-		"description":"Gets data from the microphoneThis returns sampling data from the specified position",
+		"description":"Gets data from the microphone\n\t\tThis returns sampling data from the specified position",
 		"parameters":"Variable=MICDATA( Acquisition position )"
 	},
 	"MICSAVE":{
@@ -448,7 +448,7 @@
 		"parameters":"FILES [\"File type\",] String array "
 	},
 	"LOAD (1)":{
-		"description":"Loads a file- A confirmation dialog will be displayed\n\t\t- It is impossible to load a program into the same program SLOT as a running program",
+		"description":"Loads a file\n\t\t- A confirmation dialog will be displayed\n\t\t- It is impossible to load a program into the same program SLOT as a running program",
 		"parameters":"LOAD \"[Resource name:]File name\"[,Dialog display flag] "
 	},
 	"LOAD (2)":{
@@ -464,7 +464,7 @@
 		"parameters":"LOAD \"DAT:File name\", Numerical value array[,Dialog display flag] "
 	},
 	"SAVE (1)":{
-		"description":"Saves a file- When run, a confirmation dialog will be displayed\n\t\t- The confirmation dialog for SAVE cannot be hidden",
+		"description":"Saves a file\n\t\t- When run, a confirmation dialog will be displayed\n\t\t- The confirmation dialog for SAVE cannot be hidden",
 		"parameters":"SAVE \"[Resource name:]File name\" "
 	},
 	"SAVE (2)":{
@@ -476,19 +476,19 @@
 		"parameters":"SAVE \"DAT:File name\", Numerical value array "
 	},
 	"RENAME":{
-		"description":"Changes a file nameWhen run, a confirmation dialog will be displayed",
+		"description":"Changes a file name\n\t\tWhen run, a confirmation dialog will be displayed",
 		"parameters":"RENAME \"[File type:]File name\", \"[File type:]New name\""
 	},
 	"DELETE":{
-		"description":"Deletes a fileWhen run, a confirmation dialog will be displayed",
+		"description":"Deletes a file\n\t\tWhen run, a confirmation dialog will be displayed",
 		"parameters":"DELETE \"[File type:]File name\""
 	},
 	"EXEC (1)":{
-		"description":"Loads and executes a program- It is impossible to return from a program started with EXEC to the previous program\n\t\t- It is possible to return by using END in a program started with EXEC in another SLOT\n\t\t- This cannot be used to run a program in DIRECT mode",
+		"description":"Loads and executes a program\n\t\t- It is impossible to return from a program started with EXEC to the previous program\n\t\t- It is possible to return by using END in a program started with EXEC in another SLOT\n\t\t- This cannot be used to run a program in DIRECT mode",
 		"parameters":"EXEC \"[Resource name:]File name\" "
 	},
 	"EXEC (2)":{
-		"description":"Executes a program in a different SLOT- It is impossible to return from a program executed with EXEC to the previous program\n\t\t- It is possible to return by using END in a program started with EXEC in another SLOT\n\t\t- This cannot be used to run a program in DIRECT mode",
+		"description":"Executes a program in a different SLOT\n\t\t- It is impossible to return from a program executed with EXEC to the previous program\n\t\t- It is possible to return by using END in a program started with EXEC in another SLOT\n\t\t- This cannot be used to run a program in DIRECT mode",
 		"parameters":"EXEC Program SLOT "
 	},
 	"USE":{
@@ -500,47 +500,47 @@
 		"parameters":"Variable = CHKFILE(\"[File type:]File name\")"
 	},
 	"MPSTART":{
-		"description":"Starts a wireless communication session- Connection to a session is allowed when MPSTART identifiers are equal\n\t\t- The RESULT system variable should be used to get information on whether or not a session has successfully been established\n\t\t- Communication will be terminated if the system goes into sleep mode",
+		"description":"Starts a wireless communication session\n\t\t- Connection to a session is allowed when MPSTART identifiers are equal\n\t\t- The RESULT system variable should be used to get information on whether or not a session has successfully been established\n\t\t- Communication will be terminated if the system goes into sleep mode",
 		"parameters":"MPSTART Maximum number of connected users, \"Communication identifier string\""
 	},
 	"MPEND":{
-		"description":"Ends a wireless communication session- All participants close the session synchronously\n\t\t- A wait dialog will be displayed",
+		"description":"Ends a wireless communication session\n\t\t- All participants close the session synchronously\n\t\t- A wait dialog will be displayed",
 		"parameters":"MPEND"
 	},
 	"MPSEND":{
-		"description":"Sends data to all participants in a wireless communication session- Delivery of sent data is guaranteed, but with a delay\n\t\t- A large number of MPSEND calls in a short period will result in an error\n\t\t&nbsp;&nbsp;* Communication buffer overflow\n\t\t- Communication will be terminated if the system goes into sleep mode",
+		"description":"Sends data to all participants in a wireless communication session\n\t\t- Delivery of sent data is guaranteed, but with a delay\n\t\t- A large number of MPSEND calls in a short period will result in an error\n\t\t&nbsp;&nbsp;* Communication buffer overflow\n\t\t- Communication will be terminated if the system goes into sleep mode",
 		"parameters":"MPSEND \"Character string to send\""
 	},
 	"MPRECV":{
-		"description":"Receives data from MPSEND- If there is no data to receive, the sender ID will contain the value -1\n\t\t- Communication will be terminated if the system goes into sleep mode",
+		"description":"Receives data from MPSEND\n\t\t- If there is no data to receive, the sender ID will contain the value -1\n\t\t- Communication will be terminated if the system goes into sleep mode",
 		"parameters":"MPRECV OUT SID,RCV$"
 	},
 	"MPSTAT":{
-		"description":"Gets the connection status of a specified terminal in a wireless communication sessionCommunication will be terminated if the system goes into sleep mode",
+		"description":"Gets the connection status of a specified terminal in a wireless communication session\n\t\tCommunication will be terminated if the system goes into sleep mode",
 		"parameters":"Variable = MPSTAT( [Terminal ID] )"
 	},
 	"MPNAME$":{
-		"description":"Gets the terminal name of a specified terminal in a wireless communication sessionCommunication will be terminated if the system goes into sleep mode",
+		"description":"Gets the terminal name of a specified terminal in a wireless communication session\n\t\tCommunication will be terminated if the system goes into sleep mode",
 		"parameters":"String variable = MPNAME$( Terminal ID )"
 	},
 	"MPGET":{
-		"description":"Gets user-defined data from a specified terminal in a wireless communication sessionCommunication will be terminated if the system goes into sleep mode",
+		"description":"Gets user-defined data from a specified terminal in a wireless communication session\n\t\tCommunication will be terminated if the system goes into sleep mode",
 		"parameters":"Variable=MPGET( Terminal ID, Internal management number )"
 	},
 	"MPSET":{
-		"description":"Writes to user-defined data in a wireless communication sessionCommunication will be terminated if the system goes into sleep mode",
+		"description":"Writes to user-defined data in a wireless communication session\n\t\tCommunication will be terminated if the system goes into sleep mode",
 		"parameters":"MPSET Internal management number, Numerical value"
 	},
 	"XSCREEN":{
-		"description":"Sets a screen mode- Screen modes 2 and 3 can also be used in DIRECT mode, but \n\tthe Touch Screen will be switched to a keyboard after execution is started\n\t\t- 3D specification can be disabled in the Parental Control settings",
+		"description":"Sets a screen mode\n\t\t- Screen modes 2 and 3 can also be used in DIRECT mode, but \n\tthe Touch Screen will be switched to a keyboard after execution is started\n\t\t- 3D specification can be disabled in the Parental Control settings",
 		"parameters":"XSCREEN Screen mode [,Number of sprite assignments ,Number of BG assignments]"
 	},
 	"DISPLAY (1)":{
-		"description":"Selects the screen to manipulate (Upper or Touch)- DISPLAY 1 can be specified when XSCREEN 2 or 3 is used\n\t\t-This command cannot be directly executed in DIRECT mode.",
+		"description":"Selects the screen to manipulate (Upper or Touch)\n\t\t- DISPLAY 1 can be specified when XSCREEN 2 or 3 is used\n\t\t-This command cannot be directly executed in DIRECT mode.",
 		"parameters":"DISPLAY Screen ID "
 	},
 	"DISPLAY (2)":{
-		"description":"Gets the Screen ID that is currently being used- DISPLAY 1 can be specified when XSCREEN 2 or 3 is used\n\t\t- This command cannot be directly executed in DIRECT mode.",
+		"description":"Gets the Screen ID that is currently being used\n\t\t- DISPLAY 1 can be specified when XSCREEN 2 or 3 is used\n\t\t- This command cannot be directly executed in DIRECT mode.",
 		"parameters":"Variable=DISPLAY() "
 	},
 	"VISIBLE":{
@@ -556,11 +556,11 @@
 		"parameters":"Variable=BACKCOLOR() "
 	},
 	"ACLS":{
-		"description":"Resets the draw settings to their settings when BASIC was started- The same operations as those shown after END in the Examples should be executed\n\t\t- Sound settings such as BGM will not be affected",
+		"description":"Resets the draw settings to their settings when BASIC was started\n\t\t- The same operations as those shown after END in the Examples should be executed\n\t\t- Sound settings such as BGM will not be affected",
 		"parameters":"ACLS"
 	},
 	"FADE (1)":{
-		"description":"Sets the color for the screen fader- The fader is always displayed in the front\n\t\t- The entire screen is filled with the fading color (taking the transparent color into consideration)",
+		"description":"Sets the color for the screen fader\n\t\t- The fader is always displayed in the front\n\t\t- The entire screen is filled with the fading color (taking the transparent color into consideration)",
 		"parameters":"FADE Fading color [,Fading time] "
 	},
 	"FADE (2)":{
@@ -588,7 +588,7 @@
 		"parameters":"GCOLOR OUT C32 "
 	},
 	"RGB":{
-		"description":"Gets a color code based on 8-bit RGB values- Black RGB(0,0,0)\n\t\t- White RGB(255,255,255)\n\t\t- Light gray RGB(224,224,224)\n\t\t- Gray RGB(128,128,128)\n\t\t- Dark gray RGB(64,64,64)\n\t\t- Red RGB(255,0,0)\n\t\t- Pink RGB(255,96,208)\n\t\t- Purple RGB(160,32,255)\n\t\t- Light blue RGB(80,208,255)\n\t\t- Blue RGB(0,32,255)\n\t\t- Yellow green RGB(96,255,128)\n\t\t- Green RGB(0,192,0)\n\t\t- Yellow RGB(255,224,32)\n\t\t- Orange RGB(255,160,16)\n\t\t- Brown RGB(160,128,96)\n\t\t- Pale pink RGB(255,208,160)",
+		"description":"Gets a color code based on 8-bit RGB values\n\t\t- Black RGB(0,0,0)\n\t\t- White RGB(255,255,255)\n\t\t- Light gray RGB(224,224,224)\n\t\t- Gray RGB(128,128,128)\n\t\t- Dark gray RGB(64,64,64)\n\t\t- Red RGB(255,0,0)\n\t\t- Pink RGB(255,96,208)\n\t\t- Purple RGB(160,32,255)\n\t\t- Light blue RGB(80,208,255)\n\t\t- Blue RGB(0,32,255)\n\t\t- Yellow green RGB(96,255,128)\n\t\t- Green RGB(0,192,0)\n\t\t- Yellow RGB(255,224,32)\n\t\t- Orange RGB(255,160,16)\n\t\t- Brown RGB(160,128,96)\n\t\t- Pale pink RGB(255,208,160)",
 		"parameters":"Variable = RGB( [Transparency,] Red,Green,Blue )"
 	},
 	"RGBREAD":{
@@ -596,19 +596,19 @@
 		"parameters":"RGBREAD Color code OUT [A,] R,G,B"
 	},
 	"GCLIP":{
-		"description":"Specifies a clipping area on the graphic screen- When the range is omitted in display mode, the whole screen will be clipped\n\t\t- When the range is omitted in write mode, the whole graphic page is assumed",
+		"description":"Specifies a clipping area on the graphic screen\n\t\t- When the range is omitted in display mode, the whole screen will be clipped\n\t\t- When the range is omitted in write mode, the whole graphic page is assumed",
 		"parameters":"GCLIP Clip mode [,Start point X,Start point Y,End point X, End point Y]"
 	},
 	"GPRIO":{
-		"description":"Changes the display order of the graphic screenIf 3D mode is used, the whole graphic screen will be affected",
+		"description":"Changes the display order of the graphic screen\n\t\tIf 3D mode is used, the whole graphic screen will be affected",
 		"parameters":"GPRIO Z-coordinate"
 	},
 	"GCLS":{
-		"description":"Clears the graphic screen- Instruction to fill the whole screen with black\n\t\t- It is also possible to specify a color code with which to fill the screen",
+		"description":"Clears the graphic screen\n\t\t- Instruction to fill the whole screen with black\n\t\t- It is also possible to specify a color code with which to fill the screen",
 		"parameters":"GCLS [ Color code ]"
 	},
 	"GSPOIT":{
-		"description":"Gets a color from the specified coordinates on the graphic screenThe return value may not be the same as the value specified at the time of drawing \n\tbecause it has passed through the internal color representation",
+		"description":"Gets a color from the specified coordinates on the graphic screen\n\t\tThe return value may not be the same as the value specified at the time of drawing \n\tbecause it has passed through the internal color representation",
 		"parameters":"Variable = GSPOIT( X-coordinate,Y-coordinate )"
 	},
 	"GPSET":{
@@ -636,7 +636,7 @@
 		"parameters":"GFILL Start point X,Start point Y, End point X,End point Y [,Color code]"
 	},
 	"GPAINT":{
-		"description":"Fills the graphic screen with colorIf the border color is omitted, the color range at the start point coordinates will be used",
+		"description":"Fills the graphic screen with color\n\t\tIf the border color is omitted, the color range at the start point coordinates will be used",
 		"parameters":"GPAINT Start point X, Start point Y [ ,Fill Color [, Border color ] ]"
 	},
 	"GCOPY":{
@@ -652,7 +652,7 @@
 		"parameters":"GLOAD [X,Y,Width,Height,] Image array,Color conversion flag,Copy mode "
 	},
 	"GLOAD (2)":{
-		"description":"Copies image data from an array to the graphic screenColors will be handled as index colors from palettes",
+		"description":"Copies image data from an array to the graphic screen\n\t\tColors will be handled as index colors from palettes",
 		"parameters":"GLOAD [X,Y,Width,Height,] Image array,Palette array,Copy mode "
 	},
 	"GTRI":{
@@ -676,7 +676,7 @@
 		"parameters":"Variable=SPPAGE() "
 	},
 	"SPCLIP":{
-		"description":"Specifies a clipping area in the sprite- If the range is omitted, the whole screen will be assumed",
+		"description":"Specifies a clipping area in the sprite\n\t\t- If the range is omitted, the whole screen will be assumed",
 		"parameters":"SPCLIP [Start point X,Start point Y,End point X, End point Y]"
 	},
 	"SPDEF (1)":{
@@ -700,7 +700,7 @@
 		"parameters":"SPDEF Definition number OUT U,V [,W,H [,HX,HY]] [,A] "
 	},
 	"SPDEF (6)":{
-		"description":"Copies a template for sprite character definition- Unnecessary elements can be omitted (Separating commas (',') are required)\n\t\t- Arguments are used to adjust the copied template",
+		"description":"Copies a template for sprite character definition\n\t\t- Unnecessary elements can be omitted (Separating commas (',') are required)\n\t\t- Arguments are used to adjust the copied template",
 		"parameters":"SPDEF Definition number,Source definition number,[U],[V],[W],[H],[Origin X],[Origin Y],[Attribute] "
 	},
 	"SPSET (1)":{
@@ -708,11 +708,11 @@
 		"parameters":"SPSET Management number,Definition number "
 	},
 	"SPSET (2)":{
-		"description":"Creates a sprite (using image and other information specified directly)Can be used to set a sprite separately without using the values from SPDEF\n\t\t- SPSET makes a sprite available for use\n\t\t- Executing SPSET will initialize rotation and all other information\n\t\t- All values of SPVAR will be 0\n\t\t- When any SPHIT instruction for collision detection is to be used, SPCOL should be called after SPSET",
+		"description":"Creates a sprite (using image and other information specified directly)\n\t\tCan be used to set a sprite separately without using the values from SPDEF\n\t\t- SPSET makes a sprite available for use\n\t\t- Executing SPSET will initialize rotation and all other information\n\t\t- All values of SPVAR will be 0\n\t\t- When any SPHIT instruction for collision detection is to be used, SPCOL should be called after SPSET",
 		"parameters":"SPSET Management number ,U,V [,W,H] ,Attribute "
 	},
 	"SPSET (3)":{
-		"description":"Finds an available sprite number and creates a sprite (using a definition template)Finds an available sprite number from the whole range\n\t\t- SPSET makes a sprite available for use\n\t\t- Executing SPSET will initialize rotation and all other information\n\t\t- All values of SPVAR will be 0\n\t\t- When any SPHIT instruction for collision detection is to be used, SPCOL should be called after SPSET",
+		"description":"Finds an available sprite number and creates a sprite (using a definition template)\n\t\tFinds an available sprite number from the whole range\n\t\t- SPSET makes a sprite available for use\n\t\t- Executing SPSET will initialize rotation and all other information\n\t\t- All values of SPVAR will be 0\n\t\t- When any SPHIT instruction for collision detection is to be used, SPCOL should be called after SPSET",
 		"parameters":"SPSET Definition number OUT IX"
 	},
 	"SPSET (4)":{
@@ -720,107 +720,107 @@
 		"parameters":"SPSET U,V,W,H,Attribute OUT IX"
 	},
 	"SPSET (5)":{
-		"description":"Finds an available sprite number in a certain range and creates a sprite (using a definition template)Finds an available number in the specified range\n\t\t- SPSET makes a sprite available for use\n\t\t- Executing SPSET will initialize rotation and all other information\n\t\t- All values of SPVAR will be 0\n\t\t- When any SPHIT instruction for collision detection is to be used, SPCOL should be called after SPSET",
+		"description":"Finds an available sprite number in a certain range and creates a sprite (using a definition template)\n\t\tFinds an available number in the specified range\n\t\t- SPSET makes a sprite available for use\n\t\t- Executing SPSET will initialize rotation and all other information\n\t\t- All values of SPVAR will be 0\n\t\t- When any SPHIT instruction for collision detection is to be used, SPCOL should be called after SPSET",
 		"parameters":"SPSET Upper limit,Lower limit, Definition number OUT IX "
 	},
 	"SPSET (6)":{
-		"description":"Finds an available sprite number in a certain range and creates a sprite (using image and other information specified directly)Finds an available number in the specified range\n\t\t- SPSET makes a sprite available for use\n\t\t- Executing SPSET will initialize rotation and all other information\n\t\t- All values of SPVAR will be 0\n\t\t- When any SPHIT instruction for collision detection is to be used, SPCOL should be called after SPSET",
+		"description":"Finds an available sprite number in a certain range and creates a sprite (using image and other information specified directly)\n\t\tFinds an available number in the specified range\n\t\t- SPSET makes a sprite available for use\n\t\t- Executing SPSET will initialize rotation and all other information\n\t\t- All values of SPVAR will be 0\n\t\t- When any SPHIT instruction for collision detection is to be used, SPCOL should be called after SPSET",
 		"parameters":"SPSET Upper limit,Lower limit, U,V,W,H,Attribute OUT IX "
 	},
 	"SPCLR":{
-		"description":"Stops using the specified sprite and releases the memoryIf memory is not released after use with sprites, there will be no available memory for SPSET",
+		"description":"Stops using the specified sprite and releases the memory\n\t\tIf memory is not released after use with sprites, there will be no available memory for SPSET",
 		"parameters":"SPCLR Management number"
 	},
 	"SPSHOW":{
-		"description":"Starts displaying a spriteIf used before SPSET, an error will occur",
+		"description":"Starts displaying a sprite\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPSHOW Management number"
 	},
 	"SPHIDE":{
-		"description":"Hides a sprite- This only hides the sprite; it continues to exist\n\t\t- If used before SPSET, an error will occur",
+		"description":"Hides a sprite\n\t\t- This only hides the sprite; it continues to exist\n\t\t- If used before SPSET, an error will occur",
 		"parameters":"SPHIDE Management number"
 	},
 	"SPHOME (1)":{
-		"description":"Specifies the reference point (home position) for the coordinates of a sprite- Position reference point for the SPOFS instruction\n\t\t- Center point for rotation and scaling\n\t\t- Center coordinates for collision detection\n\t\t- If used before SPSET, an error will occur",
+		"description":"Specifies the reference point (home position) for the coordinates of a sprite\n\t\t- Position reference point for the SPOFS instruction\n\t\t- Center point for rotation and scaling\n\t\t- Center coordinates for collision detection\n\t\t- If used before SPSET, an error will occur",
 		"parameters":"SPHOME Management number,Position X,Position Y "
 	},
 	"SPHOME (2)":{
-		"description":"Gets the reference point (home position) for the coordinates of a spriteIf used before SPSET, an error will occur",
+		"description":"Gets the reference point (home position) for the coordinates of a sprite\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPHOME Management number OUT HX,HY "
 	},
 	"SPOFS (1)":{
-		"description":"Changes (moves) the coordinates of a spriteIf used before SPSET, an error will occur",
+		"description":"Changes (moves) the coordinates of a sprite\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPOFS Management number, X, Y [,Z] "
 	},
 	"SPOFS (2)":{
-		"description":"Gets the coordinates of a spriteIf used before SPSET, an error will occur",
+		"description":"Gets the coordinates of a sprite\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPOFS Management number OUT X,Y[,Z] "
 	},
 	"SPROT (1)":{
-		"description":"Specifies the rotation angle of a spriteIf used before SPSET, an error will occur",
+		"description":"Specifies the rotation angle of a sprite\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPROT Management number,Angle "
 	},
 	"SPROT (2)":{
-		"description":"Gets the rotation angle of a spriteIf used before SPSET, an error will occur",
+		"description":"Gets the rotation angle of a sprite\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPROT Management number OUT DR "
 	},
 	"SPROT (3)":{
-		"description":"Gets the rotation angle of a sprite (Function type)If used before SPSET, an error will occur",
+		"description":"Gets the rotation angle of a sprite (Function type)\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"Variable=SPROT(Management number) "
 	},
 	"SPSCALE (1)":{
-		"description":"Changes the scale (display magnification) of a sprite- For collision detection that takes scale into account, SPCOL should first be executedIf used before SPSET, an error will occur",
+		"description":"Changes the scale (display magnification) of a sprite\n\t\t- For collision detection that takes scale into account, SPCOL should first be executedIf used before SPSET, an error will occur",
 		"parameters":"SPSCALE Management number, Magnification X, Magnification Y "
 	},
 	"SPSCALE (2)":{
-		"description":"Gets the display magnification of a spriteIf used before SPSET, an error will occur",
+		"description":"Gets the display magnification of a sprite\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPSCALE Management number OUT SX,SY "
 	},
 	"SPCOLOR (1)":{
-		"description":"Sets the display color of a spriteIf used before SPSET, an error will occur",
+		"description":"Sets the display color of a sprite\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPCOLOR Management number, Color code "
 	},
 	"SPCOLOR (2)":{
-		"description":"Gets the display color of a spriteIf used before SPSET, an error will occur",
+		"description":"Gets the display color of a sprite\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPCOLOR Management number OUT C32 "
 	},
 	"SPCHR (1)":{
-		"description":"Changes the character definition of a sprite (using the specified template)If used before SPSET, an error will occur",
+		"description":"Changes the character definition of a sprite (using the specified template)\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPCHR Management number, Definition number "
 	},
 	"SPCHR (2)":{
-		"description":"Changes the character definition of a sprite (using a definition specified directly)- Arguments other than the management number can be omitted\n\t\t- If used before SPSET, an error will occur",
+		"description":"Changes the character definition of a sprite (using a definition specified directly)\n\t\t- Arguments other than the management number can be omitted\n\t\t- If used before SPSET, an error will occur",
 		"parameters":"SPCHR Management number,[U],[V],[W],[H],[Attribute] "
 	},
 	"SPCHR (3)":{
-		"description":"Gets information on the character definition of a spriteIf used before SPSET, an error will occur",
+		"description":"Gets information on the character definition of a sprite\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPCHR Management number OUT U,V [,W,H [,A] ] "
 	},
 	"SPCHR (4)":{
-		"description":"Gets the character definition number of a spriteIf used before SPSET, an error will occur",
+		"description":"Gets the character definition number of a sprite\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPCHR Management number OUT DEFNO "
 	},
 	"SPLINK":{
-		"description":"Links one sprite to another sprite- Only the coordinates will be linked (The rotation angle and magnification information will not)\n\t\t- Only a sprite with a lower management number can be specified as the link destination (parent)\n\t\t- The display coordinates of the child will be determined in relation to the parent\n\t\t- In this coordinate system, the top left corner of the screen will not be the origin\n\t\t- There are no restrictions on link hierarchies\n\t\t- If used before SPSET, an error will occur",
+		"description":"Links one sprite to another sprite\n\t\t- Only the coordinates will be linked (The rotation angle and magnification information will not)\n\t\t- Only a sprite with a lower management number can be specified as the link destination (parent)\n\t\t- The display coordinates of the child will be determined in relation to the parent\n\t\t- In this coordinate system, the top left corner of the screen will not be the origin\n\t\t- There are no restrictions on link hierarchies\n\t\t- If used before SPSET, an error will occur",
 		"parameters":"SPLINK Management number, Link destination management number"
 	},
 	"SPUNLINK":{
-		"description":"Unlinks a spriteIf used before SPSET, an error will occur",
+		"description":"Unlinks a sprite\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPUNLINK Management number"
 	},
 	"SPANIM (1)":{
-		"description":"Displays animation with a sprite (using animation data specified with an array)If used before SPSET, an error will occur\n\t\t- Animation waits for a specified time, according to the value input\n\t\t- Animation starts from the frame following SPANIM execution\n\t\t- Up to 32 pieces of data will be accepted for each target element\n\t\t- If a negative value is specified for time, linear interpolation from the previous value will occur",
+		"description":"Displays animation with a sprite (using animation data specified with an array)\n\t\tIf used before SPSET, an error will occur\n\t\t- Animation waits for a specified time, according to the value input\n\t\t- Animation starts from the frame following SPANIM execution\n\t\t- Up to 32 pieces of data will be accepted for each target element\n\t\t- If a negative value is specified for time, linear interpolation from the previous value will occur",
 		"parameters":"SPANIM Management number,\"Animation target\",Data array [,Loop] "
 	},
 	"SPANIM (2)":{
-		"description":"Displays animation with a sprite (using animation data specified with the DATA instruction)If used before SPSET, an error will occur\n\t\t- Animation waits for a specified time, according to the value input\n\t\t- Animation starts from the frame following SPANIM execution\n\t\t- Up to 32 pieces of data will be accepted for each target element\n\t\t- If a negative value is specified for time, linear interpolation from the previous value will occur",
+		"description":"Displays animation with a sprite (using animation data specified with the DATA instruction)\n\t\tIf used before SPSET, an error will occur\n\t\t- Animation waits for a specified time, according to the value input\n\t\t- Animation starts from the frame following SPANIM execution\n\t\t- Up to 32 pieces of data will be accepted for each target element\n\t\t- If a negative value is specified for time, linear interpolation from the previous value will occur",
 		"parameters":"SPANIM Management number,\"Animation target\",\"@Label string\" [,Loop] "
 	},
 	"SPANIM (3)":{
-		"description":"Displays animation with a sprite (using animation data specified directly as arguments)If used before SPSET, an error will occur\n\t\t- Animation waits for a specified time, according to the value input\n\t\t- Animation starts from the frame following SPANIM execution\n\t\t- Up to 32 pieces of data will be accepted for each target element\n\t\t- If a negative value is specified for time, linear interpolation from the previous value will occur",
+		"description":"Displays animation with a sprite (using animation data specified directly as arguments)\n\t\tIf used before SPSET, an error will occur\n\t\t- Animation waits for a specified time, according to the value input\n\t\t- Animation starts from the frame following SPANIM execution\n\t\t- Up to 32 pieces of data will be accepted for each target element\n\t\t- If a negative value is specified for time, linear interpolation from the previous value will occur",
 		"parameters":"SPANIM Management number,\"Animation target\",Time 1,Item 1[,Item 2] [,Time 2,Item 1[,Item 2]]… [,Loop] "
 	},
 	"SPSTOP":{
-		"description":"Stops animation of a spriteIf used before SPSET, an error will occur",
+		"description":"Stops animation of a sprite\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPSTOP [Management number]"
 	},
 	"SPSTART":{
@@ -828,87 +828,87 @@
 		"parameters":"SPSTART [Management number]"
 	},
 	"SPCHK":{
-		"description":"Gets the animation status of a spriteIf used before SPSET, an error will occur",
+		"description":"Gets the animation status of a sprite\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"Variable=SPCHK( Management number )"
 	},
 	"SPVAR (1)":{
-		"description":"Writes to a sprite internal variable- Sprite internal variables (Each sprite has eight variables that the user can use)\n\t\t- Can also be used before SPSET (When SPSET is executed, all eight variables will be 0)",
+		"description":"Writes to a sprite internal variable\n\t\t- Sprite internal variables (Each sprite has eight variables that the user can use)\n\t\t- Can also be used before SPSET (When SPSET is executed, all eight variables will be 0)",
 		"parameters":"SPVAR Management number,Internal variable number,Numerical data "
 	},
 	"SPVAR (2)":{
-		"description":"Reads a sprite internal variable (Function type)- Sprite internal variables (Each sprite has eight variables that the user can use)\n\t\t- Can also be used before SPSET (When SPSET is executed, all eight variables will be 0)",
+		"description":"Reads a sprite internal variable (Function type)\n\t\t- Sprite internal variables (Each sprite has eight variables that the user can use)\n\t\t- Can also be used before SPSET (When SPSET is executed, all eight variables will be 0)",
 		"parameters":"Variable=SPVAR( Management number,Internal variable number ) "
 	},
 	"SPVAR (3)":{
-		"description":"Reads a sprite internal variable- Sprite internal variables (Each sprite has eight variables that the user can use)\n\t\t- Can also be used before SPSET (When SPSET is executed, all eight variables will be 0)",
+		"description":"Reads a sprite internal variable\n\t\t- Sprite internal variables (Each sprite has eight variables that the user can use)\n\t\t- Can also be used before SPSET (When SPSET is executed, all eight variables will be 0)",
 		"parameters":"SPVAR Management number,Internal variable number OUT V "
 	},
 	"SPCOL (1)":{
-		"description":"Sets sprite collision detection information- Must be called before any SPHIT instruction is used\n\t\t- SPCOLVEC should also be called\n\t\t- If used before SPSET, an error will occur",
+		"description":"Sets sprite collision detection information\n\t\t- Must be called before any SPHIT instruction is used\n\t\t- SPCOLVEC should also be called\n\t\t- If used before SPSET, an error will occur",
 		"parameters":"SPCOL Management number [,Scale adjustment] "
 	},
 	"SPCOL (2)":{
-		"description":"Sets sprite collision detection information (including mask specification)- Must be called before any SPHIT instruction is used\n\t\t- SPCOLVEC should also be called\n\t\t- If used before SPSET, an error will occur",
+		"description":"Sets sprite collision detection information (including mask specification)\n\t\t- Must be called before any SPHIT instruction is used\n\t\t- SPCOLVEC should also be called\n\t\t- If used before SPSET, an error will occur",
 		"parameters":"SPCOL Management number,[Scale adjustment],Mask "
 	},
 	"SPCOL (3)":{
-		"description":"Sets sprite collision detection information (including range specification)- Must be called before any SPHIT instruction is used\n\t\t- SPCOLVEC should also be called\n\t\t- If used before SPSET, an error will occur",
+		"description":"Sets sprite collision detection information (including range specification)\n\t\t- Must be called before any SPHIT instruction is used\n\t\t- SPCOLVEC should also be called\n\t\t- If used before SPSET, an error will occur",
 		"parameters":"SPCOL Management number,Start point X,Start point Y,Width,Height,[Scale adjustment],Mask "
 	},
 	"SPCOL (4)":{
-		"description":"Gets sprite collision detection information (scale adjustment and mask)If used before SPSET, an error will occur",
+		"description":"Gets sprite collision detection information (scale adjustment and mask)\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPCOL Management number OUT Scale adjustment [,Mask] "
 	},
 	"SPCOL (5)":{
-		"description":"Gets sprite collision detection information (range)If used before SPSET, an error will occur",
+		"description":"Gets sprite collision detection information (range)\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPCOL Management number OUT Start point X,Start point Y,Width,Height "
 	},
 	"SPCOL (6)":{
-		"description":"Gets sprite collision detection information (range and scale adjustment)If used before SPSET, an error will occur",
+		"description":"Gets sprite collision detection information (range and scale adjustment)\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPCOL Management number OUT Start point X,Start point Y,Width,Height,Scale adjustment "
 	},
 	"SPCOL (7)":{
-		"description":"Gets sprite collision detection information (all information)If used before SPSET, an error will occur",
+		"description":"Gets sprite collision detection information (all information)\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPCOL Management number OUT Start point X,Start point Y,Width,Height,Scale adjustment,Mask "
 	},
 	"SPCOLVEC":{
-		"description":"Sets a movement speed for sprite collision detection- It is recommended to also call this instruction when setting SPCOL\n\t\t- If used before SPSET, an error will occur",
+		"description":"Sets a movement speed for sprite collision detection\n\t\t- It is recommended to also call this instruction when setting SPCOL\n\t\t- If used before SPSET, an error will occur",
 		"parameters":"SPCOLVEC Management number [,Movement amount X,Movement amount Y]"
 	},
 	"SPHITSP (1)":{
-		"description":"Detects sprite collision- SPCOL and SPCOLVEC should be called beforehand\n\t\t- If used before SPSET, an error will occur",
+		"description":"Detects sprite collision\n\t\t- SPCOL and SPCOLVEC should be called beforehand\n\t\t- If used before SPSET, an error will occur",
 		"parameters":"Variable = SPHITSP( Management number [,First ID,Last ID] ) "
 	},
 	"SPHITSP (2)":{
-		"description":"Detects sprite collision: collision between the specified sprites- SPCOL and SPCOLVEC should be called beforehand\n\t\t- If used before SPSET, an error will occur",
+		"description":"Detects sprite collision: collision between the specified sprites\n\t\t- SPCOL and SPCOLVEC should be called beforehand\n\t\t- If used before SPSET, an error will occur",
 		"parameters":"Variable = SPHITSP( Management number ,Opponent management number ) "
 	},
 	"SPHITRC (1)":{
-		"description":"Detects collision between a moving quadrangle and any sprite- SPCOL and SPCOLVEC should be called beforehand\n\t\t- If used before SPSET, an error will occur",
+		"description":"Detects collision between a moving quadrangle and any sprite\n\t\t- SPCOL and SPCOLVEC should be called beforehand\n\t\t- If used before SPSET, an error will occur",
 		"parameters":"SPHITRC( Start point X,Start point Y,Width,Height[,[Mask],Movement amount X,Movement amount Y] ) "
 	},
 	"SPHITRC (2)":{
-		"description":"Detects collision between the specified sprite and a quadrangle- SPCOL and SPCOLVEC should be called beforehand\n\t\t- If used before SPSET, an error will occur",
+		"description":"Detects collision between the specified sprite and a quadrangle\n\t\t- SPCOL and SPCOLVEC should be called beforehand\n\t\t- If used before SPSET, an error will occur",
 		"parameters":"SPHITRC( Management number,Start point X,Start point Y,Width,Height[,[Mask],Movement amount X,Movement amount Y] ) "
 	},
 	"SPHITRC (3)":{
-		"description":"Detects collision between the specified range of sprites and a quadrangle- SPCOL and SPCOLVEC should be called beforehand\n\t\t- If used before SPSET, an error will occur",
+		"description":"Detects collision between the specified range of sprites and a quadrangle\n\t\t- SPCOL and SPCOLVEC should be called beforehand\n\t\t- If used before SPSET, an error will occur",
 		"parameters":"SPHITRC( First ID,Last ID, Start point x,Start point y,Width,Height[,[Mask],Movement amount X, Movement amount Y] ) "
 	},
 	"SPHITINFO (1)":{
-		"description":"Gets information on collision detection results (Time of collision)If used before SPSET, an error will occur",
+		"description":"Gets information on collision detection results (Time of collision)\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPHITINFO OUT TM "
 	},
 	"SPHITINFO (2)":{
-		"description":"Gets information on collision detection results (Time of collision and coordinates)If used before SPSET, an error will occur",
+		"description":"Gets information on collision detection results (Time of collision and coordinates)\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPHITINFO OUT TM,X1,Y1,X2,Y2 "
 	},
 	"SPHITINFO (3)":{
-		"description":"Gets information on collision detection results (Time of collision, coordinates and speed)If used before SPSET, an error will occur",
+		"description":"Gets information on collision detection results (Time of collision, coordinates and speed)\n\t\tIf used before SPSET, an error will occur",
 		"parameters":"SPHITINFO OUT TM,X1,Y1,VX1,VY1,X2,Y2,VX2,VY2 "
 	},
 	"SPFUNC":{
-		"description":"Assigns a process to a sprite- An instruction for advanced users that is used when callback processing is required\n\t\t- All sprite processes are executed with CALL sprite\n\t\t- Instead of @Label, a user process defined using DEF can also be specified\n\t\t- At the processing target, the management number can be obtained using the CALLIDX system variable\n\t\t- If used before SPSET, an error will occur",
+		"description":"Assigns a process to a sprite\n\t\t- An instruction for advanced users that is used when callback processing is required\n\t\t- All sprite processes are executed with CALL sprite\n\t\t- Instead of @Label, a user process defined using DEF can also be specified\n\t\t- At the processing target, the management number can be obtained using the CALLIDX system variable\n\t\t- If used before SPSET, an error will occur",
 		"parameters":"SPFUNC Management number, @Label"
 	},
 	"SPUSED":{
@@ -944,7 +944,7 @@
 		"parameters":"BGCLIP Layer [,Starting point X,Starting point Y,End point X,End point Y]"
 	},
 	"BGHOME (1)":{
-		"description":"Sets the display origin of a layer- Origin for rotation and scaling of the BG screen",
+		"description":"Sets the display origin of a layer\n\t\t- Origin for rotation and scaling of the BG screen",
 		"parameters":"BGHOME Layer,Position X,Position Y "
 	},
 	"BGHOME (2)":{
@@ -968,7 +968,7 @@
 		"parameters":"BGROT Layer OUT R "
 	},
 	"BGSCALE (1)":{
-		"description":"Scales the BG screen- When scaled down, BGs exceeding 3600 in total will not be displayed\n\t\t- If this display limit is exceeded, the BG screen will be distorted",
+		"description":"Scales the BG screen\n\t\t- When scaled down, BGs exceeding 3600 in total will not be displayed\n\t\t- If this display limit is exceeded, the BG screen will be distorted",
 		"parameters":"BGSCALE Layer,Enlargement scale X,Enlargement scale Y "
 	},
 	"BGSCALE (2)":{
@@ -976,7 +976,7 @@
 		"parameters":"BGSCALE Layer OUT SX,SY "
 	},
 	"BGPUT":{
-		"description":"Places a BG character on the BG screenNo image will be displayed for character number 0",
+		"description":"Places a BG character on the BG screen\n\t\tNo image will be displayed for character number 0",
 		"parameters":"BGPUT Layer,X,Y,Screen data"
 	},
 	"BGFILL":{
@@ -1012,15 +1012,15 @@
 		"parameters":"Variable=BGCHK( Layer )"
 	},
 	"BGVAR (1)":{
-		"description":"Writes to a BG internal variableUser variables; there are eight variables for each BG layer",
+		"description":"Writes to a BG internal variable\n\t\tUser variables; there are eight variables for each BG layer",
 		"parameters":"BGVAR Layer,Internal variable number,Numerical value "
 	},
 	"BGVAR (2)":{
-		"description":"Reads a BG internal variable (function type)User variables; there are eight variables for each BG layer",
+		"description":"Reads a BG internal variable (function type)\n\t\tUser variables; there are eight variables for each BG layer",
 		"parameters":"Variable=BGVAR( Layer number,Internal variable number )"
 	},
 	"BGVAR (3)":{
-		"description":"Reads a BG internal variable- User variables; there are eight variables for each BG layer",
+		"description":"Reads a BG internal variable\n\t\t- User variables; there are eight variables for each BG layer",
 		"parameters":"BGVAR Layer,Internal variable number OUT V "
 	},
 	"BGCOPY":{
@@ -1048,7 +1048,7 @@
 		"parameters":"BGCOLOR Layer OUT C32 "
 	},
 	"BGFUNC":{
-		"description":"Assigns a callback process to a BG layer- An instruction for advanced users that is used when callback processing is required\n\t\t- All BG layer processes are executed with CALL BG\n\t\t- Instead of @Label, a user process defined using DEF can also be specified\n\t\t- At the processing target, a management number can be obtained using a CALLIDX system variable",
+		"description":"Assigns a callback process to a BG layer\n\t\t- An instruction for advanced users that is used when callback processing is required\n\t\t- All BG layer processes are executed with CALL BG\n\t\t- Instead of @Label, a user process defined using DEF can also be specified\n\t\t- At the processing target, a management number can be obtained using a CALLIDX system variable",
 		"parameters":"BGFUNC Layer, @Label"
 	},
 	"BEEP":{
@@ -1064,19 +1064,19 @@
 		"parameters":"BGMCLEAR [User-defined tune number]"
 	},
 	"BGMPLAY (1)":{
-		"description":"Plays music (Plays back registered BGM)- Up to 8 tunes can be played simultaneously (The total maximum number of sounds that can be generated simultaneously is 16)\n\t\t- See the second page for information on how to play music using MML",
+		"description":"Plays music (Plays back registered BGM)\n\t\t- Up to 8 tunes can be played simultaneously (The total maximum number of sounds that can be generated simultaneously is 16)\n\t\t- See the second page for information on how to play music using MML",
 		"parameters":"BGMPLAY [Track number,] Tune number [,Volume] "
 	},
 	"BGMPLAY (2)":{
-		"description":"Plays music (Plays back the input MML data)- MML playback is performed in track 0\n\t\t- The MML tune will overwrite user-defined tune number 255\n\t\t- Executing immediately after BGMPLAY will cause a delay of approx. 2 frames",
+		"description":"Plays music (Plays back the input MML data)\n\t\t- MML playback is performed in track 0\n\t\t- The MML tune will overwrite user-defined tune number 255\n\t\t- Executing immediately after BGMPLAY will cause a delay of approx. 2 frames",
 		"parameters":"BGMPLAY \"MML string\" "
 	},
 	"BGMSET":{
-		"description":"Predefines a user-defined piece of musicExecuting immediately after BGMPLAY will cause a delay of approx. 2 frames",
+		"description":"Predefines a user-defined piece of music\n\t\tExecuting immediately after BGMPLAY will cause a delay of approx. 2 frames",
 		"parameters":"BGMSET User-defined tune number,\"MML string\""
 	},
 	"BGMSETD":{
-		"description":"Predefines a user-defined tune- The DATA instruction should be used for internal registration of MML ( DATA \"CDEFGAB\" )\n\t\t- The end of DATA is determined according to the numerical value ( DATA 0 )\n\t\t- Internally, this is handled in the same way as RESTORE\n\t\t- RESTORE must be used to READ the data after BGMSETD\n\t\t- Executing immediately after BGMPLAY will cause a delay of approx. 2 frames",
+		"description":"Predefines a user-defined tune\n\t\t- The DATA instruction should be used for internal registration of MML ( DATA \"CDEFGAB\" )\n\t\t- The end of DATA is determined according to the numerical value ( DATA 0 )\n\t\t- Internally, this is handled in the same way as RESTORE\n\t\t- RESTORE must be used to READ the data after BGMSETD\n\t\t- Executing immediately after BGMPLAY will cause a delay of approx. 2 frames",
 		"parameters":"BGMSETD User-defined tune number,\"@Label string\""
 	},
 	"BGMVAR (1)":{
@@ -1092,7 +1092,7 @@
 		"parameters":"BGMSTOP [Track number [,Fading time]]"
 	},
 	"BGMSTOP (2)":{
-		"description":"Stops playing music- Forces ongoing sounds such as release sounds to stop\n\t\t- Executing this will cause user-defined BGM 255 to be overwritten",
+		"description":"Stops playing music\n\t\t- Forces ongoing sounds such as release sounds to stop\n\t\t- Executing this will cause user-defined BGM 255 to be overwritten",
 		"parameters":"BGMSTOP -1 "
 	},
 	"BGMVOL":{
@@ -1104,7 +1104,7 @@
 		"parameters":"WAVSET Definition number,A,D,S,R,\"Waveform string\" [,Reference pitch]"
 	},
 	"WAVSETA":{
-		"description":"Defines the sound of an MML user-defined musical instrument from an array- Used for sound definition from an array obtained with MICSAVE\n\t\t- 8180Hz sampling rate, 8 bits fixed",
+		"description":"Defines the sound of an MML user-defined musical instrument from an array\n\t\t- Used for sound definition from an array obtained with MICSAVE\n\t\t- 8180Hz sampling rate, 8 bits fixed",
 		"parameters":"WAVSETA Definition number,A,D,S,R,Numerical value array [,Reference pitch][,Start subscript][,End subscript]"
 	},
 	"EFCOFF":{
@@ -1112,7 +1112,7 @@
 		"parameters":"EFCOFF"
 	},
 	"EFCON":{
-		"description":"Turns on the effector settingThe effect type should be selected with the EFCSET instruction",
+		"description":"Turns on the effector setting\n\t\tThe effect type should be selected with the EFCSET instruction",
 		"parameters":"EFCON"
 	},
 	"EFCSET (1)":{
@@ -1128,7 +1128,7 @@
 		"parameters":"EFCWET BEEP effect value, BGM effect value, TALK effect value"
 	},
 	"TALK":{
-		"description":"Generates synthesized speechAlphanumeric symbols are read out character-by-character ",
+		"description":"Generates synthesized speech\n\t\tAlphanumeric symbols are read out character-by-character ",
 		"parameters":"TALK \"Voice string\""
 	},
 	"TALKCHK":{
@@ -1140,7 +1140,7 @@
 		"parameters":"TALKSTOP"
 	},
 	"FLOOR":{
-		"description":"Gets the integer part (by rounding down to the whole number)- The largest integer that is not greater than the specified value will be obtained\n\t\t- FLOOR(12.5) will be 12, while FLOOR(-12.5) will be -13",
+		"description":"Gets the integer part (by rounding down to the whole number)\n\t\t- The largest integer that is not greater than the specified value will be obtained\n\t\t- FLOOR(12.5) will be 12, while FLOOR(-12.5) will be -13",
 		"parameters":"Variable = FLOOR( Numerical value )"
 	},
 	"ROUND":{
@@ -1148,7 +1148,7 @@
 		"parameters":"Variable = ROUND( Numerical value )"
 	},
 	"CEIL":{
-		"description":"Gets the integer part (by rounding up to the whole number)- The smallest integer that is not less than the specified value will be obtained\n\t\t- CEIL(12.5) will be 13, while CEIL(-12.5) will be -12",
+		"description":"Gets the integer part (by rounding up to the whole number)\n\t\t- The smallest integer that is not less than the specified value will be obtained\n\t\t- CEIL(12.5) will be 13, while CEIL(-12.5) will be -12",
 		"parameters":"Variable = CEIL( Numerical value )"
 	},
 	"ABS":{
@@ -1316,7 +1316,7 @@
 		"parameters":"String variable=PRGGET$()"
 	},
 	"PRGSET":{
-		"description":"Substitutes the contents of the current line with the specified stringIf PRGGET$ has returned an empty string, a line will be added",
+		"description":"Substitutes the contents of the current line with the specified string\n\t\tIf PRGGET$ has returned an empty string, a line will be added",
 		"parameters":"PRGSET \"Character string\""
 	},
 	"PRGINS":{
@@ -1362,9 +1362,5 @@
 	"&gt;&gt;":{
 		"description":"Shifts a numerical value to the right by the specified number of bits",
 		"parameters":"Variable=Numerical value &gt;&gt; Number of times"
-	},
-	"MML (1)":{
-		"description":"Commands for controlling whole tunes",
-		"parameters":"\n\tIf an error has occurred, the relevant information is stored in the system variable.\n\tERRNUM (Error number)\n\tERRLINE (Number of the line where the error occurred)"
 	}
 }
