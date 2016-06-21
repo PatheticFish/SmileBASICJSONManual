@@ -51,6 +51,10 @@
 		"description":"Declares arrays to use\n\t\t- In this product, arrays must always be declared\n\t\t- The subscript should begin with 0\n\t\t- The number of elements must be enclosed in []. () is not allowed\n\t\t- Either DIM or VAR can be used",
 		"parameters":"VAR Array variable name[ Number of elements ] ,…"
 	},
+	"VAR (3)":{
+		"description":"Returns a reference to a variable\n\t\tThis feature is undocumented"
+		"parameters":"VAR(\"Variable name\")"
+	}
 	"SWAP":{
 		"description":"Swaps the values of two variables\n\t\tReplacing a character string with a numerical value, or vice versa, is not allowed",
 		"parameters":"SWAP Variable 1, Variable 2"
