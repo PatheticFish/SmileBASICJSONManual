@@ -54,7 +54,7 @@
 	"VAR (3)":{
 		"description":"Returns a reference to a variable\n\t\tThis feature is undocumented",
 		"parameters":"VAR(\"Variable name\")"
-	}
+	},
 	"SWAP":{
 		"description":"Swaps the values of two variables\n\t\tReplacing a character string with a numerical value, or vice versa, is not allowed",
 		"parameters":"SWAP Variable 1, Variable 2"
