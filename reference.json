@@ -52,7 +52,7 @@
 		"parameters":"VAR Array variable name[ Number of elements ] ,…"
 	},
 	"VAR (3)":{
-		"description":"Returns a reference to a variable\n\t\tThis feature is undocumented"
+		"description":"Returns a reference to a variable\n\t\tThis feature is undocumented",
 		"parameters":"VAR(\"Variable name\")"
 	}
 	"SWAP":{
