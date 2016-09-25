@@ -1284,7 +1284,7 @@
 		"parameters":"String variable = HEX$( Numerical value [,Number of digits] )"
 	},
 	"FORMAT$":{
-		"description":"Stringizes values by using display formats to shape them",
+		"description":"Stringifies values by using display formats to shape them",
 		"parameters":"Variable$ = FORMAT$( \"Format string\", Value ,… )"
 	},
 	"LEN":{
