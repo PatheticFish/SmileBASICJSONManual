@@ -335,8 +335,8 @@
 		"description":"Displays a dialog used only for inputting file names",
 		"parameters":"String=DIALOG( \"Initial string\", \"Caption string\" [,Maximum characters]) "
 	},
-	"DIALOG (6)":{
-		"description":"Displaying special characters in DIALOG\n\t\tTo use special character and symbols, pass the character code in the UTF-16 format to CHR$\n\t\t* For details on the UTF-16 format, please refer to a technical book or similar resource.",
+	"CLS":{
+		"description":"Clears the console screen (the screen specified with the DISPLAY instruction)",
 		"parameters":"CLS"
 	},
 	"COLOR":{
